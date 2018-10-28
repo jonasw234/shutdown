@@ -31,7 +31,7 @@ def main(argv):
                 seconds += int(time_string[2])
             except Exception:
                 seconds += int(time_string[2][:-1])
-        os.system('shutdown -s -f -t ' + str(seconds))
+        os.system('powershell.exe -WindowStyle Hidden -Command "sleep {}; shutdown -s -f -t 0"'.format(seconds))
         return 0
     else:
         print('Usage: shutdown_in.py 1h1m1s.')
