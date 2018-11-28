@@ -19,9 +19,9 @@ import sys
 def to_int(time_element):
     if time_element:
         try:
-            return int(time_element[:-1])
-        except Exception:
             return int(time_element)
+        except Exception:
+            return int(time_element[:-1])
     return 0
 
 
