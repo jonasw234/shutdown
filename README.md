@@ -1,4 +1,4 @@
-# shutdown_in
+# shutdown
 Simple Python script to shutdown the computer in the future or at a specific time.
 
 Check the releases for a compiled version that doesn’t need a Python installation.
